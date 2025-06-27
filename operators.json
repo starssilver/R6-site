@@ -1,0 +1,645 @@
+{
+    "attackers": [
+        {
+            "name": "Sledge",
+            "nationality": "Écossais",
+            "organization": "SAS",
+            "abilityName": "Marteau tactique 'The Caber'",
+            "abilityDetails": "Sledge utilise un marteau lourd capable de détruire instantanément des surfaces non renforcées comme les murs, les sols, les barricades et les barbelés. C'est un outil polyvalent pour créer des brèches, des lignes de vue ou pour déloger des défenseurs.",
+            "counters": ["Castle", "Barbelés", "Maestro (pour les murs fins)"],
+            "synergies": ["Thatcher (pour murs renforcés à travers un trou de Sledge)", "Fuze (pour éliminer les défenseurs derrière un mur brisé)", "IQ (pour repérer les gadgets)"]
+        },
+        {
+            "name": "Thatcher",
+            "nationality": "Britannique",
+            "organization": "SAS",
+            "abilityName": "Grenade IEM EG MKO-EMP",
+            "abilityDetails": "Les grenades IEM de Thatcher désactivent tous les gadgets électroniques dans un rayon d'action. Cela inclut les murs renforcés électrifiés, les brouilleurs, les pièges électroniques, les caméras, et bien d'autres. C'est essentiel pour ouvrir des murs ou désactiver les défenses ennemies avant une percée.",
+            "counters": ["Wamai (intercepte les grenades)", "Jäger (détruit les grenades)", "Mute (brouilleur rend difficile le lancer d'IEM)"],
+            "synergies": ["Thermite (pour ouvrir les murs électrifiés)", "Hibana (pour ouvrir les murs électrifiés)", "Maverick (pour les gadgets hors de portée IEM)"]
+        },
+        {
+            "name": "Ash",
+            "nationality": "Américaine",
+            "organization": "FBI SWAT",
+            "abilityName": "Lanceur de brèche M120",
+            "abilityDetails": "Le M120 est un lance-grenades qui tire des charges explosives à distance. Ces charges peuvent détruire des murs non renforcés, des trappes, des barrières, et d'autres surfaces destructibles, créant ainsi de nouvelles lignes de vue ou des points d'entrée. Elles sont très utiles pour surprendre les défenseurs ou éliminer des gadgets ennemis.",
+            "counters": ["Jäger (détruit les projectiles)", "Wamai (intercepte les projectiles)", "Castle (rend ses barricades destructibles mais coûteuses)"],
+            "synergies": ["Zofia (pour la pression sur les défenseurs)", "Montagne (pour couvrir les pushes)", "Twitch (pour détruire les gadgets avant l'assaut)"]
+        },
+        {
+            "name": "Thermite",
+            "nationality": "Américaine",
+            "organization": "FBI SWAT",
+            "abilityName": "Charge Exothermique BRIMSTONE BC-3",
+            "abilityDetails": "La charge exothermique de Thermite est une charge explosive puissante capable de faire sauter des murs, des trappes, ou des barricades renforcés. C'est l'un des rares moyens d'ouvrir des surfaces blindées, ce qui est crucial pour la stratégie offensive en créant des brèches importantes sur le site de l'objectif. La charge met un certain temps à s'amorcer et est vulnérable aux brouilleurs ou aux tirs ennemis.",
+            "counters": ["Bandit (électrifie les murs)", "Kaid (électrifie les murs et trappes)", "Mute (brouilleur)", "Impacts (pour détruire la charge)"],
+            "synergies": ["Thatcher (pour désactiver les électrifications)", "Maverick (pour créer des lignes de vue sur les électrifications)", "Ace (pour des brèches multiples)"]
+        },
+        {
+            "name": "Twitch",
+            "nationality": "Française",
+            "organization": "GIGN",
+            "abilityName": "Drone Électrocuteur RDS-MK2",
+            "abilityDetails": "Twitch dispose de deux drones spéciaux qui peuvent tirer des décharges électriques à courte portée. Ces décharges peuvent détruire les gadgets électroniques ennemis (caméras, pièges de Kapkan, brouilleurs, etc.) et infliger de faibles dégâts aux opérateurs. Les drones peuvent également servir à la reconnaissance.",
+            "counters": ["Mute (brouilleur)", "Mozzie (pirate les drones)", "Jäger (détruit le drone avant qu'il ne puisse tirer)"],
+            "synergies": ["Thermite (pour dégager les murs électrifiés)", "Hibana (pour dégager les murs électrifiés)", "IQ (pour repérer les gadgets avant de les détruire)"]
+        },
+        {
+            "name": "Montagne",
+            "nationality": "Française",
+            "organization": "GIGN",
+            "abilityName": "Bouclier Extensible LE ROC",
+            "abilityDetails": "Montagne peut déployer un bouclier balistique qui le couvre entièrement des tirs, même debout. Il est pratiquement invulnérable aux tirs frontaux sous cette forme, mais ne peut pas tirer ni utiliser d'autres gadgets. Il est idéal pour la reconnaissance, pour bloquer des couloirs ou pour planter le désamorceur en toute sécurité.",
+            "counters": ["Smoke (gaz le force à bouger)", "Capitao (flèches de feu le force à bouger)", "Lesion (mines Gu le ralentissent)", "Ela (mines GRZMOT l'étourdissent)", "Clash (électrocution)"],
+            "synergies": ["Dokkaebi (pour révéler les positions ennemies)", "Fuze (pour déloger les défenseurs)", "Finka (pour le boost de PV et le recul réduit)"]
+        },
+        {
+            "name": "Glaz",
+            "nationality": "Russe",
+            "organization": "Spetsnaz",
+            "abilityName": "Lunette thermique HDS Flip Sight",
+            "abilityDetails": "Glaz est équipé d'une lunette de fusil de sniper capable d'alterner entre un mode optique standard et un mode thermique qui met en évidence les silhouettes des ennemis à travers la fumée et certains obstacles. Cela lui donne un avantage considérable pour repérer et éliminer les adversaires, notamment à longue distance.",
+            "counters": ["Warden (voit à travers la fumée)", "Caveira (approche silencieuse)", "Vigil (invisible aux caméras)"],
+            "synergies": ["Smoke (lance de la fumée pour qu'il voie les ennemis)", "Capitao (flèches fumigènes)", "Montagne (pour la protection pendant qu'il maintient un angle)"]
+        },
+        {
+            "name": "Fuze",
+            "nationality": "Russe",
+            "organization": "Spetsnaz",
+            "abilityName": "Charge à fragmentation APM-6 'Matryoshka'",
+            "abilityDetails": "Fuze peut déployer une charge à fragmentation sur des murs non renforcés, des fenêtres ou des trappes. La charge tire une rafale de petites grenades qui rebondissent à l'intérieur de la pièce, infligeant des dégâts ou éliminant les ennemis et les gadgets dans la zone. Très efficace pour déloger les défenseurs d'une position fortifiée.",
+            "counters": ["Jäger (détruit les grenades)", "Wamai (intercepte les grenades)", "Mute (pour brouiller certains spots où il pourrait placer sa charge)"],
+            "synergies": ["IQ (pour trouver les gadgets à détruire)", "Thatcher (pour désactiver les gadgets électroniques)", "Lion (pour bloquer les ennemis dans la pièce)"]
+        },
+        {
+            "name": "Blitz",
+            "nationality": "Allemande",
+            "organization": "GSG 9",
+            "abilityName": "Bouclier Éclair G52-Tactical Shield",
+            "abilityDetails": "Le bouclier de Blitz intègre une série de lumières flash qu'il peut activer pour aveugler les ennemis proches. Quand son bouclier est levé, il est protégé des tirs frontaux. Il peut courir avec son bouclier levé, ce qui le rend très efficace pour des poussées agressives et pour désorienter les défenseurs.",
+            "counters": ["Smoke (gaz)", "Lesion (mines Gu)", "Ela (mines GRZMOT)", "Melusi (Banshee)", "Clash (électrocution)"],
+            "synergies": ["Montagne (pour un push à deux boucliers)", "Ying (pour aveugler la pièce avant d'entrer)", "Dokkaebi (pour révéler les positions)"]
+        },
+        {
+            "name": "IQ",
+            "nationality": "Allemande",
+            "organization": "GSG 9",
+            "abilityName": "Détecteur de Gadgets Électroniques RED MKIII 'Spectre'",
+            "abilityDetails": "IQ peut déployer un capteur qui détecte tous les signaux électroniques à travers les murs et les sols, affichant leur silhouette. Cela lui permet de localiser les caméras, les pièges, les brouilleurs, les charges de désamorçage, et même les téléphones des défenseurs lorsqu'ils interagissent avec des gadgets.",
+            "counters": ["Mute (brouille ses gadgets)", "Vigil (DCE le rend invisible à IQ)"],
+            "synergies": ["Thatcher (pour détruire les gadgets qu'elle repère)", "Ash/Zofia (pour détruire les gadgets à distance)", "Fuze (pour nettoyer la pièce des gadgets)"]
+        },
+        {
+            "name": "Buck",
+            "nationality": "Canadienne",
+            "organization": "JTF2",
+            "abilityName": "Squelette de Fusil d'Assaut sous le Canon (SKC)",
+            "abilityDetails": "Buck peut basculer rapidement entre son fusil principal et un fusil à pompe sous le canon. Ce fusil à pompe est excellent pour créer rapidement des trous dans les murs non renforcés, les sols et les plafonds, ouvrant de nouvelles lignes de vue et des voies de destruction verticale.",
+            "counters": ["Barbelés (ralentit ses pushs verticaux)", "Lesion (mines Gu)", "Melusi (Banshee)"],
+            "synergies": ["Sledge (pour encore plus de destruction)", "Nomad (pour protéger ses flancs pendant la destruction)", "Lion (pour empêcher les rotations forcées par les trous)"]
+        },
+        {
+            "name": "Blackbeard",
+            "nationality": "Américaine",
+            "organization": "Navy SEALs",
+            "abilityName": "Boucliers de Fusil SR-25/Mk17",
+            "abilityDetails": "Blackbeard peut attacher un bouclier balistique transparent à son fusil. Ce bouclier absorbe un nombre limité de balles avant de se briser, mais il protège la tête de Blackbeard des tirs entrants, lui donnant un avantage significatif dans les duels frontaux.",
+            "counters": ["Explosifs (frag, C4)", "Flanks/Rotations", "Explosifs de Maestro", "Glaz (pour le duel de snipe)"],
+            "synergies": ["Lion (pour le forcer à camper dans la ligne de vue)", "IQ (pour repérer les pièges)", "Doc/Finka (pour le soin et la réanimation)"]
+        },
+        {
+            "name": "Capitao",
+            "nationality": "Brésilienne",
+            "organization": "BOPE",
+            "abilityName": "Arbalète Tactique 'Paraíso'",
+            "abilityDetails": "Capitao utilise une arbalète qui tire deux types de carreaux : des carreaux incendiaires qui brûlent l'oxygène et infligent des dégâts sur la durée, et des carreaux fumigènes qui créent un écran de fumée épais. Ces outils sont parfaits pour le contrôle de zone, pour bloquer des lignes de vue ou pour déloger des ennemis.",
+            "counters": ["Jäger (détruit les flèches incendiaires)", "Wamai (intercepte les flèches)", "Smoke (contrôle le gaz)", "Aruni (les lasers détruisent les projectiles)"],
+            "synergies": ["Glaz (pour voir à travers la fumée)", "Montagne (pour le push dans la fumée)", "Ying (pour un push coordonné)"]
+        },
+        {
+            "name": "Hibana",
+            "nationality": "Japonaise",
+            "organization": "SAT",
+            "abilityName": "Lance-projectile X-KAIROS",
+            "abilityDetails": "Hibana tire des charges de brèche explosives qui adhèrent aux surfaces et peuvent détruire des murs et des trappes renforcés. Chaque tir libère plusieurs petites charges qui peuvent être configurées pour créer des trous de différentes tailles, idéales pour ouvrir des lignes de vue précises ou des points d'entrée partiels.",
+            "counters": ["Bandit (électrifie les murs)", "Kaid (électrifie les murs et trappes)", "Mute (brouilleur)", "Impacts (pour détruire les charges)", "Castle (peut bloquer ses lignes de vue)"],
+            "synergies": ["Thatcher (pour désactiver les électrifications)", "Twitch (pour détruire les gadgets)", "Maverick (pour créer des lignes de vue)"]
+        },
+        {
+            "name": "Jackal",
+            "nationality": "Espagnole",
+            "organization": "GEO",
+            "abilityName": "EYENOX Mod III",
+            "abilityDetails": "Jackal peut activer son visiocasque EYENOX pour scanner les empreintes de pas laissées par les défenseurs. Une fois les empreintes scannées, la position du défenseur est pingée plusieurs fois pour toute l'équipe attaquante, révélant sa localisation et forçant les défenseurs à se déplacer.",
+            "counters": ["Caveira (pas d'empreintes ou difficiles à trouver)", "Vigil (DCE le rend indétectable aux scans)", "Mute (les brouilleurs empêchent le scan d'empreintes)"],
+            "synergies": ["Lion (pour forcer le mouvement et pinger)", "Dokkaebi (pour révéler les positions)", "Fuze/Ash/Zofia (pour punir les ennemis pingés)"]
+        },
+        {
+            "name": "Ying",
+            "nationality": "Hongkongaise",
+            "organization": "SDU",
+            "abilityName": "Candela",
+            "abilityDetails": "Ying utilise des charges flash 'Candela' qui peuvent être roulées, lancées ou placées sur des surfaces. Ces charges libèrent de multiples flashs qui aveuglent tous les opérateurs à proximité, sauf Ying elle-même si elle les active correctement. Idéal pour des poussées agressives et pour neutraliser la vision des défenseurs.",
+            "counters": ["Jäger (détruit les Candela)", "Wamai (intercepte les Candela)", "Warden (voit à travers les flashs)"],
+            "synergies": ["Blitz (pour un push aveuglant)", "Lion (pour forcer les ennemis à rester dans le flash)", "Montagne (pour le push couvert)"]
+        },
+        {
+            "name": "Zofia",
+            "nationality": "Polonaise",
+            "organization": "GROM",
+            "abilityName": "Lance-grenades double KS79 LIFELINE",
+            "abilityDetails": "Zofia est équipée d'un lance-grenades qui tire deux types de munitions : des grenades à percussion qui créent des brèches dans les surfaces non renforcées et des charges de concussion qui étourdissent les ennemis et leurs gadgets électroniques. Elle a aussi la capacité de se relever d'un état de mise à terre une fois par manche.",
+            "counters": ["Jäger (détruit les projectiles explosifs)", "Wamai (intercepte les projectiles)", "Ela (immunité partielle à l'étourdissement)"],
+            "synergies": ["Ash (pour la destruction massive)", "Thatcher (pour désactiver les gadgets)", "Lion (pour empêcher les ennemis de fuir l'étourdissement)"]
+        },
+        {
+            "name": "Dokkaebi",
+            "nationality": "Coréenne du Sud",
+            "organization": "707th SMB",
+            "abilityName": "Logiciel Logique-Bombe",
+            "abilityDetails": "Dokkaebi peut utiliser son ordinateur portable pour lancer un appel à tous les téléphones des défenseurs, faisant vibrer et sonner leurs appareils, révélant leur position s'ils ne raccrochent pas rapidement. Elle peut également pirater les caméras des défenseurs (y compris celles de Valkyrie et Maestro) après avoir éliminé un défenseur.",
+            "counters": ["Mute (brouille l'appel si l'opérateur est dans le rayon)", "Vigil (DCE le rend invisible à l'appel)"],
+            "synergies": ["Jackal (pour localiser les ennemis après l'appel)", "Lion (pour forcer les ennemis à bouger/révéler leur position)", "Montagne (pour couvrir la prise de contrôle des caméras)"]
+        },
+        {
+            "name": "Lion",
+            "nationality": "Française",
+            "organization": "GIGN (via CBRN Threat Unit)",
+            "abilityName": "Drone d'Observation EE-ONE-D",
+            "abilityDetails": "Lion peut activer son drone d'observation en orbite pour détecter tout mouvement ennemi. Lorsque le drone est actif, les ennemis qui bougent sont 'pingés' en temps réel pour toute l'équipe attaquante. Cela force les défenseurs à rester immobiles ou à révéler leur position, ce qui est très puissant pour les pushes ou les clutchs.",
+            "counters": ["Mute (brouille la détection si l'opérateur est dans le rayon)", "Vigil (DCE le rend invisible à la détection de Lion)"],
+            "synergies": ["Jackal (pour combiner les pings)", "Finka (pour le push agressif pendant le scan)", "Fuze/Ash/Zofia (pour punir les ennemis pingés)"]
+        },
+        {
+            "name": "Finka",
+            "nationality": "Biélorusse",
+            "organization": "Spetsnaz (via CBRN Threat Unit)",
+            "abilityName": "Adrénaline Surging",
+            "abilityDetails": "Finka peut activer son boost d'adrénaline pour toute l'équipe, augmentant temporairement les points de vie de tous les attaquants, réduisant le recul des armes, et permettant de se relever instantanément d'un état de mise à terre. C'est un puissant outil de soutien pour les pushes ou pour les situations de combat intenses.",
+            "counters": ["Smoke (gaz contre le boost de PV)", "Lesion (les mines Gu annulent le boost de PV et ralentissent)", "Ela (les mines GRZMOT étourdissent malgré le boost)"],
+            "synergies": ["Blitz/Montagne (pour un push plus résistant)", "Ash/Zofia (pour une agression soutenue)", "Lion (pour capitaliser sur les pings avec un boost de puissance)"]
+        },
+        {
+            "name": "Maverick",
+            "nationality": "Américaine",
+            "organization": "Delta Force",
+            "abilityName": "Torche à Souder 'SURI'",
+            "abilityDetails": "Maverick utilise une torche à souder silencieuse qui peut brûler des trous précis dans n'importe quelle surface, y compris les murs renforcés. Cela lui permet de créer de petites lignes de vue pour tuer des défenseurs, détruire des gadgets sur les murs ou ouvrir de minuscules brèches sans faire beaucoup de bruit.",
+            "counters": ["Kaid (sa griffe est difficile à détruire au travers des petits trous)", "Bandit (sa batterie peut être placée après le trou)", "Mira (attention à ne pas ouvrir sur son miroir)"],
+            "synergies": ["Thatcher (pour aider à détruire les gadgets sans torche)", "Ace/Thermite/Hibana (pour ouvrir de plus grandes brèches)", "IQ (pour repérer les gadgets derrière les murs)"]
+        },
+        {
+            "name": "Nomad",
+            "nationality": "Marocaine",
+            "organization": "GIGR",
+            "abilityName": "Lanceur de Bourrasques 'Airjab'",
+            "abilityDetails": "Nomad peut tirer des dispositifs 'Airjab' qui adhèrent aux surfaces. Lorsqu'un ennemi entre dans leur rayon de détection, ils se déclenchent et projettent l'ennemi en arrière, le rendant vulnérable. Idéal pour protéger les flancs, bloquer des rotations ou déloger des campeurs.",
+            "counters": ["Jäger (détruit les Airjabs)", "Wamai (intercepte les Airjabs)", "Aruni (les lasers les détruisent)"],
+            "synergies": ["Fuze (pour déloger les ennemis dans les pièges)", "Lion (pour pinger les ennemis repoussés)", "Gridlock (pour un contrôle de zone accru)"]
+        },
+        {
+            "name": "Gridlock",
+            "nationality": "Australienne",
+            "organization": "SASR",
+            "abilityName": "Nid de Caltrops 'Trax Stingers'",
+            "abilityDetails": "Gridlock peut déployer des charges qui libèrent des nids de caltrops 'Trax Stingers' qui se déploient au sol. Ces pièges ralentissent les défenseurs qui marchent dessus et leur infligent de petits dégâts. Ils sont parfaits pour couper des rotations ou avertir l'équipe des mouvements ennemis.",
+            "counters": ["Smoke (gaz les détruit)", "Aruni (les lasers les détruisent)", "Tachanka (flammes)"],
+            "synergies": ["Nomad (pour un déni de zone complet)", "Capitao (pour bloquer les zones avec feu/fumée)", "Lion (pour forcer les ennemis dans les pièges)"]
+        },
+        {
+            "name": "Nøkk",
+            "nationality": "Danoise",
+            "organization": "Jaeger Corps",
+            "abilityName": "HEL Presence Reduction Device",
+            "abilityDetails": "Nøkk peut activer son HEL, ce qui la rend presque invisible aux caméras de sécurité et aux gadgets de détection électroniques (comme les caméras de Maestro ou de Valkyrie). Elle est également silencieuse lorsqu'elle marche. Cela la rend extrêmement furtive pour des infiltrations discrètes et des approches surprises.",
+            "counters": ["Lesion (mines invisibles)", "Barbelés (fait du bruit)", "Kapkan (pièges invisibles)", "Melusi (Banshee la ralentit)"],
+            "synergies": ["IQ (pour repérer les pièges avant de s'infiltrer)", "Dokkaebi (pour aider à pirater les caméras qu'elle ignore)"]
+        },
+        {
+            "name": "Amaru",
+            "nationality": "Péruvienne",
+            "organization": "APCA",
+            "abilityName": "Grappin Garra Hook",
+            "abilityDetails": "Amaru utilise un grappin qui lui permet de s'accrocher rapidement aux rebords, aux fenêtres, aux trappes et aux balcons, lui offrant des entrées rapides et inattendues. Elle peut ainsi prendre les défenseurs par surprise en arrivant par des points d'accès inhabituels.",
+            "counters": ["Barbelés (sur les rebords)", "Lesion (mines Gu sous les fenêtres)", "Kapkan (pièges sur les fenêtres)", "Ela (mines GRZMOT près des trappes)"],
+            "synergies": ["Blitz (pour une agression rapide après la brèche)", "Finka (pour le boost de PV pour les pushs risqués)", "IQ (pour vérifier les gadgets avant de grappiner)"]
+        },
+        {
+            "name": "Kali",
+            "nationality": "Indienne",
+            "organization": "NIGHTHAVEN",
+            "abilityName": "Lance-pointe de destruction LV Électro-Lance",
+            "abilityDetails": "Kali utilise un fusil de sniper avec une optique variable et un lance-pointe spécialisé. Ses pointes peuvent détruire les gadgets électroniques sur les deux côtés des surfaces (y compris les murs renforcés), les rendant inoffensifs. Très efficace contre les gadgets de Bandit, Kaid ou Jäger.",
+            "counters": ["Jäger (peut détruire sa pointe en vol)", "Wamai (intercepte sa pointe)", "Maestro (caméra blindée difficile à détruire)"],
+            "synergies": ["Thermite/Hibana (pour ouvrir les murs après la destruction des gadgets)", "Blackbeard (pour des duels de sniper)"]
+        },
+        {
+            "name": "Iana",
+            "nationality": "Néerlandaise",
+            "organization": "NIGHTHAVEN",
+            "abilityName": "Gémini Réplicateur",
+            "abilityDetails": "Iana peut déployer une réplique holographique d'elle-même qui peut se déplacer et explorer la zone. Cette réplique est parfaite pour le repérage sans risque, pour attirer l'attention des ennemis ou pour déclencher des pièges, tout en gardant Iana en sécurité.",
+            "counters": ["Lesion (mines Gu blessent l'hologramme)", "Kapkan (pièges détruisent l'hologramme)", "Barbelés (ralentit l'hologramme)"],
+            "synergies": ["Lion (pour un push coordonné avec le clone)", "Dokkaebi (pour info sur les pings)", "IQ (pour repérer les gadgets qu'elle peut déclencher avec le clone)"]
+        },
+        {
+            "name": "Ace",
+            "nationality": "Norvégienne",
+            "organization": "NIGHTHAVEN",
+            "abilityName": "Charge de brèche S.E.L.M.A.",
+            "abilityDetails": "Ace utilise des charges de brèche S.E.L.M.A. qui peuvent être lancées sur des murs renforcés. Ces charges se déploient et explosent en séquence, créant un trou de la taille d'une personne. Il peut lancer jusqu'à trois charges, ce qui est idéal pour ouvrir de grandes brèches ou plusieurs points d'entrée.",
+            "counters": ["Bandit (électrifie les murs)", "Kaid (électrifie les murs et trappes)", "Mute (brouilleur)", "Impacts (pour détruire la charge)"],
+            "synergies": ["Thatcher (pour désactiver les électrifications)", "Maverick (pour créer des lignes de vue sur les électrifications)", "Hibana (pour encore plus de brèches)"]
+        },
+        {
+            "name": "Zero",
+            "nationality": "Américaine",
+            "organization": "Splinter Cell (Nighthaven)",
+            "abilityName": "Lanceur de caméra 'Argus'",
+            "abilityDetails": "Zero déploie des caméras Argus qui peuvent percer les surfaces (murs renforcés ou non) et avoir une vue des deux côtés. Chaque caméra peut tirer une charge électrique unique qui détruit les gadgets ennemis. Elles sont idéales pour la surveillance et la destruction de gadgets à distance.",
+            "counters": ["Jäger (détruit les caméras)", "Wamai (intercepte les caméras)", "Mute (brouille les caméras)"],
+            "synergies": ["Thatcher (pour désactiver les gadgets sans les détruire)", "IQ (pour repérer les gadgets à détruire)", "Fuze (pour nettoyer les zones avant le push)"]
+        },
+        {
+            "name": "Flores",
+            "nationality": "Argentine",
+            "organization": "APCA",
+            "abilityName": "Drone RCE-RATER",
+            "abilityDetails": "Flores peut déployer des drones explosifs télécommandés. Ces drones peuvent rouler et même sauter sur des surfaces avant de se charger et d'exploser, détruisant les gadgets et infligeant des dégâts aux ennemis à proximité. Très utile pour éliminer les pièges ou déloger les défenseurs de positions fortifiées.",
+            "counters": ["Jäger (détruit le drone)", "Wamai (intercepte le drone)", "Mute (brouille le drone)", "Aruni (les lasers détruisent les drones)"],
+            "synergies": ["IQ (pour repérer les gadgets à détruire)", "Lion (pour forcer les ennemis dans la zone d'explosion)", "Gridlock (pour bloquer les ennemis)"]
+        },
+        {
+            "name": "Osa",
+            "nationality": "Croate",
+            "organization": "NIGHTHAVEN",
+            "abilityName": "Bouclier transparent 'Talon-8'",
+            "abilityDetails": "Osa peut déployer un bouclier transparent déployable qui peut être placé au sol ou sur des cadres de fenêtre/porte. Ce bouclier offre une protection balistique tout en permettant à Osa et à ses alliés de voir à travers. Il est parfait pour sécuriser une zone ou pour des pushes tactiques.",
+            "counters": ["C4 (détruit le bouclier)", "Impacts (détruit le bouclier)", "Smoke (gaz la force à bouger)", "Capitao (flèches de feu)"],
+            "synergies": ["Montagne (pour une ligne de boucliers)", "Glaz (pour tirer derrière le bouclier)", "Ying (pour un push aveuglant derrière le bouclier)"]
+        },
+        {
+            "name": "Sens",
+            "nationality": "Belge",
+            "organization": "REMPART",
+            "abilityName": "Projecteur R.O.U. Projector System",
+            "abilityDetails": "Sens lance un projectile qui se déploie en une série de petits émetteurs créant un mur de lumière verte. Ce mur bloque la ligne de vue, offrant une couverture visuelle pour les avancées ou les rotations de l'équipe.",
+            "counters": ["Warden (voit à travers)", "Smoke (gaz bloque la vue)", "Maestro (peut tirer à travers les murs de lumière avec le laser)"],
+            "synergies": ["Glaz (pour les tirs à travers le mur de lumière)", "Blitz/Montagne (pour le push couvert)", "Ying (pour une combinaison aveuglante)"]
+        },
+        {
+            "name": "Grim",
+            "nationality": "Singapourienne",
+            "organization": "Nightheaven",
+            "abilityName": "Lance-essaim Kawan Hive",
+            "abilityDetails": "Grim utilise un lanceur qui tire des cartouches contenant un essaim de drones. Ces drones créent une zone de détection qui révèle en continu la position des ennemis qui se trouvent à l'intérieur. Idéal pour couper les rotations ou forcer les ennemis à quitter une zone.",
+            "counters": ["Jäger (détruit les drones)", "Wamai (intercepte les drones)", "Mute (brouille la détection)", "Aruni (les lasers détruisent les drones)"],
+            "synergies": ["Capitao (pour bloquer les zones avec feu/fumée)", "Lion (pour un double ping)", "Fuze (pour déloger les ennemis dans la zone)"]
+        },
+        {
+            "name": "Brava",
+            "nationality": "Brésilienne",
+            "organization": "REMPART",
+            "abilityName": "Drone de piratage Kludge",
+            "abilityDetails": "Brava déploie un drone qui peut pirater et prendre le contrôle des gadgets électroniques des défenseurs (caméras, brouilleurs, pièges, etc.), les transformant en gadgets alliés ou les détruisant si le piratage est impossible.",
+            "counters": ["Mute (brouille le drone et les gadgets qu'il cible)", "Mozzie (peut pirater le drone de Brava)", "Vigil (DCE rend ses gadgets invisibles)"],
+            "synergies": ["IQ (pour trouver les gadgets à pirater)", "Twitch (pour détruire les gadgets sans pirater)", "Thatcher (pour désactiver temporairement les gadgets avant le piratage)"]
+        },
+        {
+            "name": "Ram",
+            "nationality": "Sud-coréenne",
+            "organization": "Nightheaven",
+            "abilityName": "Charge autonome de brèche BU-GI",
+            "abilityDetails": "Ram déploie des drones blindés qui avancent en ligne droite et détruisent tout sur leur passage (murs non renforcés, sols, barricades, gadgets). Ils sont parfaits pour ouvrir des lignes de vue verticales ou horizontales et forcer les défenseurs à se repositionner.",
+            "counters": ["C4 (détruit le drone)", "Impacts (détruit le drone)", "Kapkan (pièges peuvent le détruire)", "Lesion (mines ralentissent/endommagent)", "Barbelés (ralentit)"],
+            "synergies": ["Sledge/Buck (pour une destruction accrue)", "Thatcher (pour dégager la voie des gadgets)", "Lion (pour forcer le mouvement des ennemis)"]
+        },
+        {
+            "name": "Deimos",
+            "nationality": "Américaine",
+            "organization": "REDHAMMER",
+            "abilityName": "Traqueur de cible DEATHMARK",
+            "abilityDetails": "Deimos peut activer son gadget pour localiser et suivre la position d'un ennemi désigné pendant une courte période. Le traqueur révèle la position de la cible en temps réel pour Deimos et son équipe, tandis que la cible reçoit un avertissement sonore.",
+            "counters": ["Mute (brouille le traqueur si la cible est dans le rayon)", "Vigil (DCE le rend introuvable par Deimos)"],
+            "synergies": ["Lion (pour un double ping, forçant les ennemis à se révéler)", "Jackal (pour combiner les pings)", "Finka (pour le push agressif sur la cible)"]
+        },
+        {
+            "name": "Tubarao",
+            "nationality": "Portugaise",
+            "organization": "REMPART",
+            "abilityName": "Dispositif Zoto Canister",
+            "abilityDetails": "Tubarao lance des canisters Zoto qui gèlent et ralentissent les ennemis et leurs gadgets dans un rayon d'action. Les surfaces gelées (y compris les gadgets de brèche) sont temporairement désactivées, ce qui peut empêcher une percée ou ralentir une poussée ennemie.",
+            "counters": ["Thatcher (désactive temporairement)", "IQ (repère le gadget)", "Ash/Zofia (détruit le gadget à distance)"],
+            "synergies": ["Bandit/Kaid (pour une défense de mur encore plus forte)", "Maestro (pour des tirs faciles sur les ennemis ralentis)", "Melusi (pour ralentir encore plus)"]
+        }
+    ],
+    "defenders": [
+        {
+            "name": "Smoke",
+            "nationality": "Britannique",
+            "organization": "SAS",
+            "abilityName": "Grenade à Gaz Toxique 'Remote Gas Grenade'",
+            "abilityDetails": "Smoke peut lancer des grenades à gaz toxique télécommandées qui libèrent un nuage de gaz jaune persistant. Ce gaz inflige des dégâts considérables aux opérateurs pris à l'intérieur, qu'ils soient alliés ou ennemis. Il est idéal pour bloquer des couloirs, interdire l'accès à une zone ou forcer les attaquants à sortir d'un point d'entrée.",
+            "counters": ["IQ (détecte le gaz)", "Thatcher (désactive les grenades si lancées près d'IEM)", "Glaz (peut tirer à travers sa fumée)"],
+            "synergies": ["Rook (pour la survie de l'équipe dans le gaz)", "Lesion (pour piéger les ennemis dans le gaz)", "Mira (pour voir à travers son gaz avec le miroir)"]
+        },
+        {
+            "name": "Mute",
+            "nationality": "Britannique",
+            "organization": "SAS",
+            "abilityName": "Brouilleur de Signal GC90 'Moni'",
+            "abilityDetails": "Mute déploie des brouilleurs de signal qui empêchent tous les gadgets électroniques ennemis (drones, charges de brèche, charges exothermiques, etc.) de fonctionner dans leur rayon d'action. Les brouilleurs sont essentiels pour protéger les murs renforcés, les entrées, et pour cacher la position des gadgets des défenseurs.",
+            "counters": ["IQ (détecte le brouilleur)", "Thatcher (désactive le brouilleur)", "Twitch (détruit le brouilleur)", "Maverick (peut percer un trou à côté du brouilleur)"],
+            "synergies": ["Bandit/Kaid (pour une défense de mur impénétrable)", "Castle (pour brouiller ses barricades)", "Vigil (pour brouiller sa détection)"]
+        },
+        {
+            "name": "Castle",
+            "nationality": "Américaine",
+            "organization": "FBI SWAT",
+            "abilityName": "Panneau Renforcé UTP-1",
+            "abilityDetails": "Castle peut déployer des panneaux renforcés sur les portes et les fenêtres. Ces barricades sont beaucoup plus résistantes que les barricades en bois standards et nécessitent plusieurs coups de mêlée, plusieurs balles, ou l'utilisation de gadgets spécifiques (comme les charges de brèche ou les grenades) pour être détruites. Elles sont efficaces pour ralentir les assauts ennemis et rediriger leur avancée.",
+            "counters": ["Ash (lanceur de brèche)", "Zofia (grenades à percussion)", "Sledge (marteau)", "Fuze (charge)", "Kali (pointe de destruction)"],
+            "synergies": ["Mute (pour empêcher les drones et gadgets de s'approcher des barricades)", "Pulse (pour détecter à travers les barricades)", "Doc/Rook (pour une ligne de défense renforcée)"]
+        },
+        {
+            "name": "Pulse",
+            "nationality": "Américaine",
+            "organization": "FBI SWAT",
+            "abilityName": "Capteur de Rythme Cardiaque 'HB-5'",
+            "abilityDetails": "Pulse utilise un capteur qui détecte les battements de cœur des ennemis à travers les murs et les sols, lui permettant de localiser les attaquants même s'ils sont cachés. C'est un outil puissant pour les informations et les éliminations à travers les surfaces destructibles.",
+            "counters": ["IQ (détecte son capteur)", "Thatcher (désactive le capteur temporairement)"],
+            "synergies": ["Smoke (pour savoir où lancer le gaz)", "Castle (pour savoir où les ennemis vont passer)", "Mute (pour brouiller la zone où il se trouve)"]
+        },
+        {
+            "name": "Doc",
+            "nationality": "Française",
+            "organization": "GIGN",
+            "abilityName": "Pistolet de Réanimation MPD-0",
+            "abilityDetails": "Doc utilise un pistolet de réanimation qui peut tirer des seringues de stimulant. Il peut réanimer un allié mis à terre à distance, ou soigner n'importe quel joueur (lui-même inclus) en lui rendant des points de vie supplémentaires, même au-delà de sa santé maximale temporairement. Très utile pour soutenir ses équipiers et prolonger leur survie.",
+            "counters": ["Lion (force à bouger, pas de soin possible)", "Capitao (feu réduit la capacité de soin)"],
+            "synergies": ["Rook (pour une résistance accrue)", "Montagne/Blitz (pour les défendre pendant qu'ils poussent)", "Finka (pour le boost de PV et le soin mutuel)"]
+        },
+        {
+            "name": "Rook",
+            "nationality": "Française",
+            "organization": "GIGN",
+            "abilityName": "Sac d'armures R1N 'Rhino'",
+            "abilityDetails": "Rook déploie un sac contenant des plaques d'armure supplémentaires pour toute son équipe. Chaque plaque confère un bonus de points de vie et garantit un état de mise à terre plutôt que de mort instantanée lors d'un tir mortel (sauf pour les tirs à la tête). Cela augmente considérablement la survie des défenseurs.",
+            "counters": ["Glaz (peut one-shot même avec armure)", "Fuze (grenades fragmentaires)", "Capitao (flèches incendiaires contournent l'armure)"],
+            "synergies": ["Doc (pour le soin et la réanimation)", "Tachanka (pour une ancre très résistante)", "Smoke (pour tenir une zone avec plus de PV)"]
+        },
+        {
+            "name": "Kapkan",
+            "nationality": "Russe",
+            "organization": "Spetsnaz",
+            "abilityName": "Dispositif d'entrée explosif EDD Mk II",
+            "abilityDetails": "Kapkan place des pièges explosifs invisibles sur les cadres de porte et de fenêtre. Lorsqu'un attaquant passe à travers le piège, celui-ci explose, infligeant des dégâts considérables. Il peut en placer jusqu'à cinq, ce qui est excellent pour les déni de zone et les kills de frag.",
+            "counters": ["IQ (détecte les pièges)", "Thatcher (désactive les pièges)", "Twitch (détruit les pièges)"],
+            "synergies": ["Barbelés (pour ralentir les ennemis dans les pièges)", "Lesion (pour des pièges supplémentaires)", "Smoke (pour les ennemis qui tentent de fuir le piège)"]
+        },
+        {
+            "name": "Tachanka",
+            "nationality": "Russe",
+            "organization": "Spetsnaz",
+            "abilityName": "Lance-grenades incendiaire Shumikha",
+            "abilityDetails": "Tachanka est équipé d'un lance-grenades qui tire des cartouches incendiaires créant des zones de flammes persistantes. Ces flammes infligent des dégâts aux ennemis et bloquent la ligne de vue, parfaites pour le déni de zone ou pour empêcher les approches ennemies.",
+            "counters": ["IQ (détecte les lanceurs)", "Thatcher (désactive)", "Twitch (détruit)"],
+            "synergies": ["Rook (pour plus de survie)", "Mira (pour bloquer un point de vue et tirer à travers le feu)", "Smoke (pour un déni de zone combiné)"]
+        },
+        {
+            "name": "Jäger",
+            "nationality": "Allemande",
+            "organization": "GSG 9",
+            "abilityName": "Système de Défense Active (SDA) 'Magpie'",
+            "abilityDetails": "Jäger peut déployer jusqu'à trois systèmes de défense active. Ces dispositifs interceptent et détruisent les projectiles ennemis entrants tels que les grenades flash, les grenades fumigènes, les grenades frag et les projectiles de Ying (Candela). Chaque SDA peut détruit deux projectiles avant d'être épuisé. Ils sont essentiels pour protéger un site des assauts basés sur les utilitaires.",
+            "counters": ["Thatcher (désactive les SDA)", "Twitch (détruit les SDA)", "Kali (détruit les SDA)"],
+            "synergies": ["Bandit/Kaid (protège leurs gadgets d'électrification)", "Mira (protège son miroir)", "Maestro (protège ses caméras)"]
+        },
+        {
+            "name": "Bandit",
+            "nationality": "Allemande",
+            "organization": "GSG 9",
+            "abilityName": "Fil barbelé électrifié CED-1",
+            "abilityDetails": "Bandit peut placer quatre packs de chocs électriques sur des fils barbelés, des boucliers déployables ou des murs renforcés. L'électricité inflige des dégâts aux attaquants qui touchent le fil ou le bouclier, et détruit les drones ainsi que les gadgets d'effraction électroniques tels que les charges exothermiques de Thermite ou les charges de Hibana. C'est crucial pour le 'Bandit trick' (poser et retirer rapidement les batteries).",
+            "counters": ["Thatcher (désactive les batteries)", "Twitch (détruit les batteries)", "Maverick (contourne les batteries)", "IQ (détecte les batteries)", "Kali (détruit les batteries)"],
+            "synergies": ["Mute (pour empêcher Thatcher/Twitch de détruire les batteries)", "Kaid (pour électrifier plus de murs/trappes)", "Jäger/Wamai (pour protéger les batteries des grenades)"]
+        },
+        {
+            "name": "Frost",
+            "nationality": "Canadienne",
+            "organization": "JTF2",
+            "abilityName": "Piège à ours 'Welcome Mat'",
+            "abilityDetails": "Frost déploie des pièges à ours dissimulés sur le sol. Lorsqu'un attaquant marche dessus, il est mis à terre et ne peut plus bouger jusqu'à ce qu'il soit réanimé par un allié ou éliminé. Ces pièges sont mortels s'ils ne sont pas vus et sont parfaits pour les prises d'éliminations surprises.",
+            "counters": ["IQ (détecte les pièges)", "Twitch (détruit les pièges)", "Sledge (détruit les pièges)", "Ash/Zofia (détruit les pièges à distance)"],
+            "synergies": ["Kapkan (pour un déni d'entrée accru)", "Lesion (pour piéger encore plus)", "Smoke (pour achever les ennemis à terre ou piégés)"]
+        },
+        {
+            "name": "Valkyrie",
+            "nationality": "Américaine",
+            "organization": "Navy SEALs",
+            "abilityName": "Caméra 'Oeil Noir' Gyro Cam",
+            "abilityDetails": "Valkyrie peut lancer trois petites caméras adhésives 'Oeil Noir' qui peuvent être placées presque n'importe où, y compris à l'extérieur. Ces caméras offrent une vision périphérique à 360 degrés et sont un outil d'information inestimable pour son équipe.",
+            "counters": ["IQ (détecte les caméras)", "Twitch (détruit les caméras)", "Thatcher (désactive les caméras)", "Nøkk (invisible aux caméras)", "Dokkaebi (pirate les caméras)"],
+            "synergies": ["Pulse (pour combiner les informations sur la position)", "Mira (pour une surveillance accrue des zones)", "Maestro (pour un réseau de caméras complet)"]
+        },
+        {
+            "name": "Caveira",
+            "nationality": "Brésilienne",
+            "organization": "BOPE",
+            "abilityName": "Interrogatoire Silencieux 'Luison'",
+            "abilityDetails": "Caveira utilise un pistolet équipé d'un silencieux intégré qui met les ennemis à terre au lieu de les tuer. Si elle interroge un ennemi à terre, elle révèle la position de tous les autres attaquants en vie pour une courte durée, ce qui est extrêmement puissant pour des éliminations en chaîne.",
+            "counters": ["Jackal (la traque)", "Lion (la force à bouger)", "Dokkaebi (peut la pinger)"],
+            "synergies": ["Pulse (pour localiser les ennemis avant l'interrogatoire)", "Vigil (pour éviter d'être repérée pendant les flanks)", "Mute (pour cacher ses rotations de drones)"]
+        },
+        {
+            "name": "Echo",
+            "nationality": "Japonaise",
+            "organization": "SAT",
+            "abilityName": "Drone Yokai Sonic",
+            "abilityDetails": "Echo déploie deux drones Yokai, capables de s'accrocher aux plafonds et de devenir presque invisibles. Ces drones peuvent tirer une impulsion sonique qui désoriente les ennemis, brouillant leur vision et leur ouïe. Ils sont parfaits pour le déni de zone, pour empêcher les plantes de désamorceur ou pour la reconnaissance.",
+            "counters": ["IQ (détecte les drones)", "Twitch (détruit les drones)", "Thatcher (désactive les drones)"],
+            "synergies": ["Mira (pour surveiller les entrées et désorienter)", "Smoke (pour lancer le gaz sur les ennemis désorientés)", "Jäger/Wamai (pour protéger les drones)"]
+        },
+        {
+            "name": "Mira",
+            "nationality": "Espagnole",
+            "organization": "GEO",
+            "abilityName": "Miroir Noir 'Black Mirror'",
+            "abilityDetails": "Mira peut installer des miroirs unidirectionnels incassables sur des murs renforcés ou non renforcés. Ces miroirs permettent aux défenseurs de voir à travers le mur sans être vus. Un réservoir d'air peut être détruit pour ouvrir un trou, permettant des éliminations surprises ou des rotations rapides.",
+            "counters": ["Maverick (peut percer les murs et détruire le miroir)", "Hibana/Thermite/Ace (peut ouvrir le mur à côté du miroir)", "Twitch (peut détruire le réservoir d'air)"],
+            "synergies": ["Jäger/Wamai (pour protéger le miroir des grenades)", "Bandit/Kaid (pour électrifier le mur sous le miroir)", "Smoke (pour lancer le gaz à travers le miroir)"]
+        },
+        {
+            "name": "Lesion",
+            "nationality": "Hongkongais",
+            "organization": "SDU",
+            "abilityName": "Mine Gu (GU Mine)",
+            "abilityDetails": "Lesion peut lancer des mines 'Gu' invisibles qui adhèrent au sol. Lorsqu'un ennemi marche dessus, la mine lui injecte une aiguille toxique qui inflige des dégâts sur la durée et le ralentit. Les aiguilles doivent être retirées manuellement, ce qui rend l'ennemi vulnérable. Lesion reçoit des informations sur les ennemis qui marchent sur ses mines.",
+            "counters": ["IQ (détecte les mines)", "Twitch (détruit les mines)", "Thatcher (désactive les mines)"],
+            "synergies": ["Kapkan (pour piéger encore plus)", "Smoke (pour achever les ennemis ralentis)", "Melusi (pour ralentir encore plus)"]
+        },
+        {
+            "name": "Ela",
+            "nationality": "Polonaise",
+            "organization": "GROM",
+            "abilityName": "Mine de Concussion GRZMOT",
+            "abilityDetails": "Ela déploie des mines de concussion 'Grzmot' qui peuvent être lancées sur des surfaces. Lorsqu'un ennemi entre dans leur rayon, elles explosent, étourdissant l'ennemi et affectant sa vision et son ouïe. Elle a une mine supplémentaire qui se déclenche automatiquement si elle est mise à terre.",
+            "counters": ["IQ (détecte les mines)", "Twitch (détruit les mines)", "Thatcher (désactive les mines)"],
+            "synergies": ["Lesion (pour étourdir et ralentir)", "Kapkan (pour des pièges multiples)", "Smoke (pour lancer le gaz sur les ennemis étourdis)"]
+        },
+        {
+            "name": "Vigil",
+            "nationality": "Coréenne du Sud",
+            "organization": "707th SMB",
+            "abilityName": "Dispositif de Camouflage Électronique (DCE)",
+            "abilityDetails": "Vigil peut activer son DCE pour devenir invisible aux drones ennemis et aux caméras (y compris les drones de Twitch et les caméras de Valkyrie et Maestro). Lorsque le DCE est actif, un indicateur visuel apparaît pour les attaquants à proximité, leur signalant sa présence sans révéler sa position exacte.",
+            "counters": ["Lion (son scan le révèle)", "Jackal (le traque)", "Dokkaebi (peut le pinger si le DCE est désactivé)"],
+            "synergies": ["Caveira (pour des rotations et des flanks invisibles)", "Mute (pour se cacher encore mieux des drones)", "Pulse (pour les pings)"]
+        },
+        {
+            "name": "Maestro",
+            "nationality": "Italien",
+            "organization": "GIS",
+            "abilityName": "Oeil Maléfique 'Evil Eye'",
+            "abilityDetails": "Maestro déploie des caméras blindées 'Evil Eye' qui sont résistantes aux balles lorsqu'elles sont fermées. Elles peuvent pivoter et tirer un laser qui inflige des dégâts et détruit les gadgets des attaquants. Lorsqu'elles sont ouvertes pour tirer, elles sont vulnérables aux balles. Elles fournissent également une vision thermique.",
+            "counters": ["Thatcher (désactive le laser et la caméra)", "Twitch (détruit le laser et la caméra)", "Ash/Zofia (explosifs le détruisent)", "Kali (détruit la caméra)", "Brava (peut pirater)"],
+            "synergies": ["Jäger/Wamai (pour protéger les caméras des grenades)", "Mira (pour un contrôle de zone accru)", "Echo (pour un réseau de caméras complet)"]
+        },
+        {
+            "name": "Alibi",
+            "nationality": "Italienne",
+            "organization": "GIS",
+            "abilityName": "Prisma Holographique",
+            "abilityDetails": "Alibi déploie des leurres holographiques qui ressemblent à Alibi elle-même. Si un attaquant tire sur un leurre ou le touche, la position de cet attaquant est révélée à toute l'équipe des défenseurs. C'est un excellent outil pour des pièges et pour obtenir des informations sur les positions ennemies.",
+            "counters": ["Twitch (détruit les hologrammes sans les déclencher)", "IQ (détecte les hologrammes)"],
+            "synergies": ["Mira (pour voir les ennemis qui tirent sur les hologrammes)", "Lesion (pour piéger les ennemis qui tirent sur les hologrammes)", "Bandit (pour électrifier les barbelés à côté des hologrammes)"]
+        },
+        {
+            "name": "Clash",
+            "nationality": "Britannique",
+            "organization": "SAS (RMP)",
+            "abilityName": "Bouclier CCE (Crowd Control Electro Shield)",
+            "abilityDetails": "Clash utilise un bouclier balistique transparent qui peut électrocuter les ennemis à proximité, leur infligeant de faibles dégâts et les ralentissant. Elle peut maintenir son bouclier en place tout en se déplaçant, ce qui en fait une formidable ancre pour bloquer les couloirs ou les entrées.",
+            "counters": ["Thatcher (désactive son bouclier)", "Twitch (détruit son bouclier)", "Maverick (peut percer et la tuer)", "Fuze (charge)", "Capitao (flèche incendiaire)"],
+            "synergies": ["Bandit/Kaid (pour créer une zone d'électrification)", "Smoke (pour lancer le gaz sur les ennemis ralentis)", "Pulse (pour les pings d'ennemis derrière le bouclier)"]
+        },
+        {
+            "name": "Kaid",
+            "nationality": "Marocain",
+            "organization": "GIGR",
+            "abilityName": "Griffe Électrique Rtila",
+            "abilityDetails": "Kaid peut lancer des griffes électriques 'Rtila' qui adhèrent aux surfaces. Ces griffes électrifient les murs renforcés, les trappes, les boucliers déployables et les barbelés dans leur rayon d'action, empêchant les brèches ou infligeant des dégâts aux attaquants qui les touchent.",
+            "counters": ["Thatcher (désactive les griffes)", "Twitch (détruit les griffes)", "Maverick (contourne les griffes)", "IQ (détecte les griffes)", "Kali (détruit les griffes)"],
+            "synergies": ["Bandit (pour électrifier plus de murs/trappes)", "Mute (pour empêcher Thatcher/Twitch de détruire)", "Jäger/Wamai (pour protéger les griffes)"]
+        },
+        {
+            "name": "Mozzie",
+            "nationality": "Australien",
+            "organization": "SASR",
+            "abilityName": "Parasite 'Pest'",
+            "abilityDetails": "Mozzie peut lancer des parasites 'Pest' qui s'accrochent aux drones ennemis qui passent à proximité. Une fois qu'un drone est 'pêché' par un parasite, il est piraté et Mozzie (et son équipe) peut le contrôler. Cela permet d'obtenir des informations sur les attaquants ou de détruire leurs drones.",
+            "counters": ["IQ (détecte les parasites)", "Thatcher (désactive les parasites)", "Twitch (détruit les parasites)"],
+            "synergies": ["Valkyrie (pour un réseau de caméras complet)", "Mute (pour brouiller les drones et forcer les ennemis dans ses parasites)", "Maestro (pour des informations combinées)"]
+        },
+        {
+            "name": "Warden",
+            "nationality": "Américaine",
+            "organization": "Secret Service",
+            "abilityName": "Lunettes 'Glance'",
+            "abilityDetails": "Warden peut activer ses lunettes 'Glance' pour voir clairement à travers la fumée et pour contrer l'effet aveuglant des grenades flash. Cela lui donne un avantage significatif contre les attaquants qui utilisent des flashs ou de la fumée pour des poussées.",
+            "counters": ["IQ (détecte Warden avec ses lunettes actives)", "Capitao (feu le force à bouger malgré la vision)", "Fuze (grenades)"],
+            "synergies": ["Smoke (pour le déni de zone avec la vision)", "Maestro (pour voir à travers la fumée de son laser)", "Echo (pour les désorienter)"]
+        },
+        {
+            "name": "Goyo",
+            "nationality": "Mexicaine",
+            "organization": "Fuerzas Especiales",
+            "abilityName": "Bouclier Volcán",
+            "abilityDetails": "Goyo déploie des boucliers déployables équipés d'une charge incendiaire. Lorsque la charge est détruite (par Goyo ou les attaquants), elle explose, créant une zone de flammes qui inflige des dégâts. C'est un excellent outil pour le déni de zone et pour bloquer les entrées.",
+            "counters": ["Thatcher (désactive la charge)", "Twitch (détruit la charge)", "Kali (détruit la charge)", "Ace/Thermite/Hibana (peuvent ouvrir le mur derrière)"],
+            "synergies": ["Maestro (pour les tirs à travers le feu)", "Smoke (pour un déni de zone encore plus puissant)", "Mira (pour bloquer le miroir avec le feu)"]
+        },
+        {
+            "name": "Wamai",
+            "nationality": "Kényan",
+            "organization": "NIGHTHAVEN",
+            "abilityName": "Système Mag-NET",
+            "abilityDetails": "Wamai peut lancer des Mag-NETs qui interceptent les projectiles ennemis (grenades, flashes, etc.) en vol et les attirent vers eux, les faisant détoner à l'emplacement du Mag-NET. Cela permet de rediriger les utilitaires ennemis et de protéger des zones clés.",
+            "counters": ["Thatcher (désactive les Mag-NETs)", "Twitch (détruit les Mag-NETs)", "IQ (détecte les Mag-NETs)"],
+            "synergies": ["Jäger (pour une défense anti-grenade maximale)", "Mira (pour protéger son miroir)", "Maestro (pour protéger ses caméras)"]
+        },
+        {
+            "name": "Oryx",
+            "nationality": "Jordanienne",
+            "organization": "NIGHTHAVEN",
+            "abilityName": "Course de la Rame",
+            "abilityDetails": "Oryx peut charger à travers les murs non renforcés et les barricades, créant rapidement des ouvertures. Il peut également sauter à travers les trappes ouvertes dans le sol pour se déplacer rapidement entre les étages. Cela lui offre une mobilité unique et des options de rotation rapides.",
+            "counters": ["Gridlock (ralentit ses rotations)", "Nomad (peut le repousser)", "Lesion (mines Gu le ralentissent)"],
+            "synergies": ["Pulse (pour les pings et les charges au mur)", "Doc/Rook (pour la survie après les charges)", "Smoke (pour les éliminations surprises après une charge)"]
+        },
+        {
+            "name": "Melusi",
+            "nationality": "Sud-Africaine",
+            "organization": "NIGHTHAVEN",
+            "abilityName": "Dispositif d'avertissement 'Banshee'",
+            "abilityDetails": "Melusi place des dispositifs 'Banshee' qui émettent un son assourdissant et ralentissent considérablement les ennemis qui entrent dans leur rayon d'action. Ils ne bloquent pas les balles, mais alertent l'équipe et rendent les attaquants vulnérables.",
+            "counters": ["Thatcher (désactive les Banshees)", "Twitch (détruit les Banshees)", "IQ (détecte les Banshees)", "Sledge (détruit les Banshees)"],
+            "synergies": ["Lesion (pour des pièges multiples et un ralentissement accru)", "Smoke (pour les éliminations faciles sur les ennemis ralentis)", "Kapkan (pour les pièges dans les zones de Banshee)"]
+        },
+        {
+            "name": "Aruni",
+            "nationality": "Thaïlandaise",
+            "organization": "NIGHTHAVEN",
+            "abilityName": "Porte laser 'Surya Gate'",
+            "abilityDetails": "Aruni peut déployer des portails laser 'Surya Gate' sur les murs, les portes, les fenêtres ou les trappes. Ces lasers infligent des dégâts aux attaquants qui les traversent et détruisent leurs drones ou projectiles qui tentent de passer. Une fois désactivés, ils peuvent être réactivés.",
+            "counters": ["Thatcher (désactive temporairement)", "Twitch (détruit temporairement)", "IQ (détecte)", "Sledge (détruit les murs où ils sont posés)"],
+            "synergies": ["Mute (pour empêcher les drones de passer)", "Bandit/Kaid (pour protéger les murs renforcés)", "Jäger/Wamai (pour une défense anti-utilitaire complète)"]
+        },
+        {
+            "name": "Thunderbird",
+            "nationality": "Amérindienne (Nakoda)",
+            "organization": "Nightheaven",
+            "abilityName": "Station de guérison Kóna",
+            "abilityDetails": "Thunderbird peut déployer des stations de guérison Kóna qui émettent des impulsions de soin. Les opérateurs (alliés ou ennemis) qui se trouvent dans le rayon d'action sont soignés, jusqu'à un certain seuil. Cela permet de soutenir la survie de l'équipe dans les zones clés.",
+            "counters": ["Thatcher (désactive la station)", "Twitch (détruit la station)", "IQ (détecte la station)", "Flores (drone explosif)"],
+            "synergies": ["Rook (pour une ligne de défense ultra-résistante)", "Doc (pour des soins combinés)", "Maestro (pour tenir des angles avec guérison)"]
+        },
+        {
+            "name": "Thorn",
+            "nationality": "Irlandaise",
+            "organization": "APCA",
+            "abilityName": "Piège de proximité 'Razorbloom Shell'",
+            "abilityDetails": "Thorn peut déployer des pièges de proximité 'Razorbloom Shell'. Lorsqu'un ennemi est détecté dans leur rayon, le piège s'active et après un court délai, il projette des projectiles perforants qui infligent des dégâts mortels. Idéal pour défendre des goulots d'étranglement ou des points d'entrée.",
+            "counters": ["IQ (détecte les pièges)", "Twitch (détruit les pièges)", "Thatcher (désactive les pièges)", "Sledge (détruit les pièges)"],
+            "synergies": ["Smoke (pour le déni de zone)", "Lesion (pour des pièges supplémentaires)", "Melusi (pour ralentir les ennemis dans le piège)"]
+        },
+        {
+            "name": "Azami",
+            "nationality": "Japonaise",
+            "organization": "NIGHTHAVEN",
+            "abilityName": "Barricade Kiba",
+            "abilityDetails": "Azami lance des dispositifs qui, une fois activés, créent une barricade blindée et impénétrable sur les surfaces. Ces barricades peuvent boucher des trous de vision, sceller des portes, ou créer de nouvelles protections, offrant une flexibilité incroyable pour fortifier un site.",
+            "counters": ["Ash (détruit avec ses charges)", "Zofia (détruit avec ses grenades à percussion)", "Sledge (détruit avec son marteau)", "Fuze (peut tirer à travers)"],
+            "synergies": ["Mira (pour boucher les ouvertures indésirables)", "Maestro (pour les lignes de vue sûres)", "Pulse (pour les pings d'ennemis cachés derrière les Kibas)"]
+        },
+        {
+            "name": "Solis",
+            "nationality": "Columbienne",
+            "organization": "REMPART",
+            "abilityName": "Capteur SPEC-IO Electro-Sensor",
+            "abilityDetails": "Solis active un capteur qui détecte et met en évidence tous les gadgets électroniques des attaquants dans un rayon. Elle peut également scanner et 'pinguer' la position des attaquants utilisant des gadgets. C'est un puissant outil de contre-intel et de destruction de drones.",
+            "counters": ["Thatcher (désactive temporairement)", "IQ (détecte Solis avec son capteur actif)", "Mute (brouille la détection)"],
+            "synergies": ["Pulse (pour un double de pings)", "Mozzie (pour pirater les drones qu'elle repère)", "Vigil (pour être indétectable pendant qu'elle repère)"]
+        },
+        {
+            "name": "Fenrir",
+            "nationality": "Suédoise",
+            "organization": "REMPART",
+            "abilityName": "Mine F-NATT Dread",
+            "abilityDetails": "Fenrir peut déployer des mines F-NATT Dread. Lorsqu'elles sont activées à distance, ces mines libèrent un gaz terrifiant qui réduit la vision et le champ de vision des attaquants pris au piège, les rendant vulnérables. Fenrir peut activer deux mines simultanément.",
+            "counters": ["IQ (détecte les mines)", "Thatcher (désactive les mines)", "Twitch (détruit les mines)", "Ash/Zofia (détruit les mines à distance)"],
+            "synergies": ["Lesion (pour piéger encore plus)", "Smoke (pour combiner les effets de zone)", "Kapkan (pour des pièges combinés avec les mines)"]
+        }
+    ]
+}

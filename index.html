@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Six Siege - Opérateurs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Opérateurs Rainbow Six Siege</h1>
+
+        <div class="operator-type-selector">
+            <button id="showAttackersBtn" class="type-button active">Attaquants</button>
+            <button id="showDefendersBtn" class="type-button">Défenseurs</button>
+        </div>
+
+        <div class="main-content-area">
+            <div class="operator-lists-column">
+                <div id="attackersSection" class="operator-list">
+                    <h2>Liste des Attaquants</h2>
+                    <div id="attackers" class="operators">
+                        </div>
+                </div>
+
+                <div id="defendersSection" class="operator-list hidden">
+                    <h2>Liste des Défenseurs</h2>
+                    <div id="defenders" class="operators">
+                        </div>
+                </div>
+            </div>
+
+            <div id="operatorDetails" class="operator-details">
+                <p>Sélectionnez une catégorie (Attaquants/Défenseurs) puis un opérateur pour voir ses détails.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
