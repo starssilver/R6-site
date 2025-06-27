@@ -1,4 +1,66 @@
 {
+    "gadgetDefinitions": [
+        {
+        "name": "Grenade à fragmentation",
+        "description": "Grenade explosive qui cause des dégâts de zone.",
+        "users": ["Sledge", "Ash", "Capitao", "Thatcher", "Buck", "Finka", "Nøkk", "Gridlock", "IQ", "Jackal", "Nomad", "Zofia"]
+        },
+        {
+        "name": "Grenade fumigène",
+        "description": "Crée un écran de fumée dense qui bloque la ligne de vue.",
+        "users": ["Thermite", "Montagne", "Dokkaebi", "Maverick", "Thatcher", "Ying", "Nomad", "Blitz", "Fuze"]
+        },
+        {
+        "name": "Grenade paralysante",
+        "description": "Aveugle et désoriente les ennemis et les gadgets électroniques.",
+        "users": ["Ash", "Twitch", "IQ", "Fuze", "Lion", "Gridlock", "Capitao", "Sledge", "Thatcher", "Blackbeard", "Hibana", "Jackal", "Zofia"]
+        },
+        {
+        "name": "Charge de brèche",
+        "description": "Charge explosive standard pour détruire les surfaces non renforcées (murs, sols, barricades).",
+        "users": ["Ash", "Sledge", "Thermite", "Fuze", "Twitch", "Montagne", "Blackbeard", "Capitao", "Hibana", "Jackal", "Lion", "Maverick", "Nøkk", "Gridlock", "Ace", "Zero"]
+        },
+        {
+        "name": "Claymore",
+        "description": "Mine directionnelle laser qui explose lorsque l'ennemi la traverse.",
+        "users": ["Thermite", "Thatcher", "Ash", "Sledge", "Fuze", "Twitch", "Montagne", "Blackbeard", "Capitao", "IQ", "Maverick", "Gridlock", "Nomad", "Zero", "Flores"]
+        },
+        {
+        "name": "Grenade IEM",
+        "description": "Désactive temporairement les gadgets électroniques ennemis dans un certain rayon.",
+        "users": ["Thatcher"]
+        },
+        {
+        "name": "Barbelés",
+        "description": "Ralentit le mouvement des ennemis et fait du bruit lorsqu'ils le traversent.",
+        "users": ["Jäger", "Bandit", "Mute", "Castle", "Doc", "Rook", "Tachanka", "Kapkan", "Frost", "Pulse", "Valkyrie", "Mira", "Lesion", "Ela", "Vigil", "Maestro", "Clash", "Kaid", "Mozzie", "Warden", "Goyo", "Wamai", "Oryx", "Melusi", "Aruni", "Thunderbird"]
+        },
+        {
+        "name": "Cellule de nitro",
+        "description": "Explosif plastique télécommandé, idéal pour les destructions rapides et les frags surprises.",
+        "users": ["Bandit", "Pulse", "Smoke", "Doc", "Rook", "Kapkan", "Valkyrie", "Echo", "Mira", "Ela", "Vigil", "Maestro", "Alibi", "Clash", "Kaid", "Warden", "Goyo", "Wamai", "Oryx", "Melusi", "Aruni", "Thunderbird"]
+        },
+        {
+        "name": "Bouclier déployable",
+        "description": "Fournit une couverture solide et peut bloquer les lignes de vue ennemies.",
+        "users": ["Jäger", "Mute", "Castle", "Doc", "Rook", "Tachanka", "Smoke", "Pulse", "Valkyrie", "Mira", "Lesion", "Ela", "Vigil", "Maestro", "Alibi", "Clash", "Kaid", "Mozzie", "Warden", "Goyo", "Wamai", "Oryx", "Melusi", "Aruni", "Thunderbird"]
+        },
+        {
+        "name": "Caméra blindée",
+        "description": "Caméra résistante aux balles, utile pour la surveillance et le repérage.",
+        "users": ["Jäger", "Maestro", "Echo", "Vigil", "Kaid", "Mozzie", "Warden", "Goyo", "Wamai", "Oryx", "Melusi", "Aruni", "Thunderbird"]
+        },
+        {
+        "name": "Grenade à percussion",
+        "description": "Petite grenade explosive qui crée des trous rapides dans les surfaces non renforcées.",
+        "users": ["Pulse", "Smoke", "Doc", "Rook", "Kapkan", "Bandit", "Jäger", "Frost", "Valkyrie", "Mira", "Lesion", "Ela", "Vigil", "Maestro", "Alibi", "Clash", "Kaid", "Mozzie", "Warden", "Goyo", "Wamai", "Oryx", "Melusi", "Aruni", "Thunderbird"]
+        },
+        {
+        "name": "Alarme de proximité",
+        "description": "Détecte les ennemis qui entrent dans son rayon et émet un signal sonore.",
+        "users": ["Jäger", "Bandit", "Mute", "Castle", "Doc", "Rook", "Tachanka", "Kapkan", "Frost", "Pulse", "Valkyrie", "Mira", "Lesion", "Ela", "Vigil", "Maestro", "Alibi", "Clash", "Kaid", "Mozzie", "Warden", "Goyo", "Wamai", "Oryx", "Melusi", "Aruni", "Thunderbird"]
+        }
+    ],
     "attackers": [
         {
             "name": "Sledge",

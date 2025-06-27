@@ -292,4 +292,130 @@ h2 {
     .ability-name {
         font-size: 1.2em;
     }
+    .gadget-section-title {
+    color: #28a745; /* Vert pour les titres de section gadget */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 8px;
+}
+
+.gadgets-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux gadgets de s'aligner et de passer à la ligne */
+    gap: 20px; /* Espace entre les gadgets */
+    justify-content: center; /* Centrer les gadgets */
+    margin-top: 20px;
+}
+
+.gadget-item {
+    background-color: #3a3a3a; /* Fond légèrement plus clair que le conteneur principal */
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 180px; /* Largeur fixe pour chaque item de gadget */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gadget-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.gadget-image {
+    width: 100px; /* Taille de l'image du gadget */
+    height: 100px;
+    object-fit: contain; /* Pour s'assurer que l'image tient dans le cadre */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #222; /* Fond légèrement plus foncé pour l'image */
+}
+
+.gadget-name {
+    font-weight: bold;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.gadget-description {
+    font-size: 0.9em;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+/* Styles pour les barres de défilement (WebKit - Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+/* Media Queries pour la réactivité */
+@media (max-width: 900px) {
+    #app-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .operator-list-section, #operatorDetails {
+        width: 95%;
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .operator-list {
+        justify-content: center;
+    }
+
+    .gadgets-container {
+        flex-direction: column; /* Empile les gadgets sur petits écrans */
+        align-items: center;
+    }
+
+    .gadget-item {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .operator-item {
+        width: 80px;
+    }
+
+    .operator-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .operator-name {
+        font-size: 12px;
+    }
+
+    .operator-type-nav button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
 }
